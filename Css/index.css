@@ -1,0 +1,63 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0c0f18;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+.site-header {
+  background-color: #111420;
+  padding: 20px 0;
+  border-bottom: 2px solid #222;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-title {
+  color: #f9d342;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #f9d342;
+}
+
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 1s ease-out both;
+}
