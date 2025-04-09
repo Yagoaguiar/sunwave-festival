@@ -1,0 +1,163 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0c0f18;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .site-header {
+    background-color: #111420;
+    padding: 20px 0;
+    border-bottom: 2px solid #222;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .site-title {
+    color: #f9d342;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .main-nav a:hover {
+    color: #f9d342;
+  }
+  
+  .lineup-hero {
+    background: linear-gradient(to bottom, #1a1e2e, #0c0f18);
+    padding: 100px 20px 60px;
+    text-align: center;
+  }
+  
+  .lineup-hero h2 {
+    font-size: 2.5rem;
+    color: #f9d342;
+    margin-bottom: 10px;
+  }
+  
+  .lineup-hero p {
+    font-size: 1.1rem;
+    color: #ddd;
+  }
+  
+  .lineup-grid-section {
+    padding: 60px 20px;
+    background-color: #0c0f18;
+  }
+  
+  .artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+  }
+  
+  .artist-card {
+    background-color: #1a1e2e;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .artist-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .artist-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .artist-card p {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  .artist-card strong {
+    color: #f9d342;
+  }
+  
+  .site-footer {
+    background-color: #0a0c12;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #bbb;
+  }
+  
+  .footer-links {
+    margin: 15px 0;
+  }
+  
+  .footer-links a {
+    margin: 0 12px;
+    color: #f9d342;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #e6c330;
+  }
+  
+  @keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out both;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 1s ease-out both;
+  }
+  
+  @media (max-width: 768px) {
+    .lineup-hero h2 {
+      font-size: 2rem;
+    }
+  
+    .lineup-hero p {
+      font-size: 1rem;
+    }
+  
+    .artist-card p {
+      font-size: 0.95rem;
+    }
+  }
